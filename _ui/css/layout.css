@@ -88,13 +88,13 @@
 	}
 
 	#content {
-		min-height: 240px;
+		min-height: 640px;
 		background: #fff;
 		padding: 20px;
 		position: relative;
 	}
 	#subcol {
-		min-height: 240px;
+		min-height: 640px;
 		background: #fff;
 		padding: 20px;
 		position: relative;
