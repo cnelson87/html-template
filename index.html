@@ -18,6 +18,69 @@
 	<link rel="stylesheet" href="assets/styles/mobile.css" />
 	<!--[if IE 9]><link rel="stylesheet" href="assets/styles/ie9.css" /><![endif]-->
 
+	<style>
+		.promobox {
+			background: #101010;
+			margin: 2.5em 0;
+			position: relative;
+		}
+		.promobox .media {
+			position: relative;
+		}
+		.promobox .media > img {
+			display: block;
+		}
+		.promobox .info {
+			color: #fff;
+			padding: 40px 20px;
+			position: relative;
+		}
+		.promobox .info > :last-child {
+			margin-bottom: 0;
+		}
+
+		.promobox .media:before,
+		.promobox .media:after,
+		.promobox .info:after {
+			display: block;
+			content: "";
+			width: 100%;
+			height: 32px;
+			background: #333;
+			position: absolute;
+			left: 0;
+			right: 0;
+			z-index: 2;
+			transform: skewY(-2.0deg);
+			opacity: 1.0;
+		}
+		.promobox .media:before {
+			background: #101010;
+			top: -16px;
+		}
+		.promobox .media:after,
+		.promobox .info:after {
+			bottom: -16px;
+		}
+
+		#subcol .promobox .info {
+			padding: 20px 10px;
+		}
+		#subcol .promobox .media:before,
+		#subcol .promobox .media:after,
+		#subcol .promobox .info:after {
+			height: 20px;
+		}
+		#subcol .promobox .media:before {
+			top: -10px;
+		}
+		#subcol .promobox .media:after,
+		#subcol .promobox .info:after {
+			bottom: -10px;
+		}
+
+	</style>
+
 	<!--[if IE 9]><script src="assets/scripts/shims/classList.js"></script><![endif]-->
 	<script src="assets/scripts/lib/modernizr.custom.min.js"></script>
 	<script src="assets/scripts/lib/jquery.min.js"></script>
@@ -80,6 +143,17 @@
 					Mustache vegan VHS ullamco helvetica, esse cupidatat sapiente. Literally actually Carles blog banh mi, YOLO asymmetrical wolf tote bag selfies american apparel Williamsburg vero Odd Future. Tofu before they sold out fugiat keffiyeh, odio photo booth keytar laboris velit pour-over nulla Truffaut plaid esse disrupt. Seitan blog meh church-key. Eu pour-over pug retro. Sartorial hoodie readymade, elit craft beer voluptate magna. Fashion axe delectus exercitation, excepteur synth blog Marfa mollit gentrify placeat culpa cupidatat.
 				</p>
 
+				<div class="promobox">
+					<div class="media">
+						<img src="/assets/images/abstract.jpg" alt="" />
+					</div>
+					<div class="info">
+						<h3>Primary Promo</h3>
+						<p>
+							Tofu before they sold out fugiat keffiyeh, odio photo booth keytar laboris velit pour-over nulla Truffaut plaid esse disrupt. Seitan blog meh church-key. Eu pour-over pug retro. Sartorial hoodie readymade, elit craft beer voluptate magna. Fashion axe delectus exercitation, excepteur synth blog Marfa mollit gentrify placeat culpa cupidatat.
+						</p>
+					</div>
+				</div>
 
 			</div>
 
@@ -88,8 +162,20 @@
 				<div class="callout">
 					<h3>Aside Callout</h3>
 					<p>
-						Mustache vegan VHS ullamco helvetica, esse cupidatat sapiente. Literally actually Carles blog banh mi, YOLO asymmetrical wolf tote bag selfies american apparel Williamsburg vero Odd Future. <!-- Tofu before they sold out fugiat keffiyeh, odio photo booth keytar laboris velit pour-over nulla Truffaut plaid esse disrupt. Seitan blog meh church-key. Eu pour-over pug retro. Sartorial hoodie readymade, elit craft beer voluptate magna. Fashion axe delectus exercitation, excepteur synth blog Marfa mollit gentrify placeat culpa cupidatat. -->
+						Mustache vegan VHS ullamco helvetica, esse cupidatat sapiente. Literally actually Carles blog banh mi, YOLO asymmetrical wolf tote bag selfies american apparel Williamsburg vero Odd Future.
 					</p>
+				</div>
+
+				<div class="promobox">
+					<div class="media">
+						<img src="/assets/images/abstract.jpg" alt="" />
+					</div>
+					<div class="info">
+						<h3>Aside Promobox</h3>
+						<p>
+							Tofu before they sold out fugiat keffiyeh, odio photo booth keytar laboris velit pour-over nulla Truffaut plaid esse disrupt. Seitan blog meh church-key. Eu pour-over pug retro. Sartorial hoodie readymade, elit craft beer voluptate magna. Fashion axe delectus exercitation, excepteur synth blog Marfa mollit gentrify placeat culpa cupidatat.
+						</p>
+					</div>
 				</div>
 
 			</aside>
