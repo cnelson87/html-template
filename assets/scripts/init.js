@@ -1,24 +1,16 @@
 
-CNJS.main = {
+CNJS.Application = {
+
 	init: function () {
 		var self = this;
-		//console.log('CNJS.main.init');
+		//console.log('CNJS.Application.init');
 
-
-		$.event.trigger('CNJS:main:initialized');
-
-
-
-
-
-
-
-
-
+		$.event.trigger('CNJS:Application:initialized');
 
 	}
+
 };
 
 $(function () {
-	CNJS.main.init();
+	CNJS.Application.init();
 });

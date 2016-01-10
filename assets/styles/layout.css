@@ -32,7 +32,7 @@ html, body {
 	left: 0;
 	right: 0;
 	top: 0;
-	z-index: 3;
+	z-index: 5;
 }
 	#header .header-inner {
 		width: 1000px;
@@ -57,7 +57,7 @@ html, body {
 	left: 0;
 	right: 0;
 	bottom: 0;
-	z-index: 2;
+	z-index: 4;
 }
 	#footer .footer-inner {
 		width: 1000px;
@@ -80,7 +80,7 @@ html, body {
 	min-height: 100%;
 	background: #cdcdcd;
 	position: relative;
-	z-index: 1;
+	z-index: 2;
 }
 	#main .main-inner {
 		width: 1000px;
@@ -110,6 +110,22 @@ html, body {
 		float: right;
 		width: 240px;
 	}
+
+	#hero {
+		/*width: 100%;*/
+		/*height: 600px;*/
+		margin: 0 -20px;
+		position: relative;
+	}
+		#hero .media {
+			width: 100%;
+			/*height: 100%;*/
+			position: relative;
+		}
+		#hero .media > img {
+			display: block;
+			position: relative;
+		}
 
 /*** /main ***/
 
