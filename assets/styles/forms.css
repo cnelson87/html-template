@@ -39,13 +39,23 @@ output {
 }
 
 input, select, textarea, button {
+	display: inline-block;
 	color: #333;
 	font-family: Arial, sans-serif;
 	font-size: 14px;
 	line-height: 16px;
 	vertical-align: top;
+	background: none;
+	box-shadow: 0;
+	border: 0;
 	margin: 0;
 	padding: 0;
+	outline: 0;
+}
+
+/* Removed dotted line from input on Firefox */
+input::-moz-focus-inner {
+	border: 0;
 }
 
 input:invalid,
@@ -67,9 +77,25 @@ textarea:invalid {
 	color: #ababab;
 	opacity: 1;
 }
-::input-placeholder {
+::placeholder {
 	color: #ababab;
 	opacity: 1;
+}
+:focus::-webkit-input-placeholder {
+	color: transparent;
+	opacity: 0;
+}
+:focus::-moz-placeholder {
+	color: transparent;
+	opacity: 0;
+}
+:focus:-ms-input-placeholder {
+	color: transparent;
+	opacity: 0;
+}
+:focus::placeholder {
+	color: transparent;
+	opacity: 0;
 }
 
 /* start text inputs, selects, textareas */
